@@ -17,7 +17,7 @@ public class Game {
         Track track2 = new Track("Seaside", 100);
 
         tracks[0] = track1;
-        tracks[2] = track2;
+        tracks[1] = track2;
     }
 
     private void displayAvailableTracks() {
@@ -25,7 +25,18 @@ public class Game {
         System.out.println(tracks[0].getName());
         System.out.println(tracks[1].getName());
 
+        for (int i = 0; i < tracks.length; i++) {
+             //if object if different than null
+            if (tracks[i] != null) {
+                System.out.println(tracks[i].getName());
+            }
+        }
 
+        for (Track track: tracks) {
+            if (track != null) {
+                System.out.println(track.getName());
+            }
+        }
 
 
 
